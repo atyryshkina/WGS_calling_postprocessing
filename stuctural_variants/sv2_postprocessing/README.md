@@ -2,7 +2,7 @@
 
 Jupyter notebooks for postprocessing SV2 output.
 
-### [merge_sv2_vcfs.ipynb]
+### [merge_sv2_vcfs.ipynb](merge_sv2_vcfs.ipynb)
 
 Merges VCFs output by SV2. Removes calls that aren't DUPs or DELs, and that aren't FILTER==PASS. 
 
