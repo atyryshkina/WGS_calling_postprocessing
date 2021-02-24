@@ -1,6 +1,6 @@
 # running SV2
 
-Scripts to four VCF callers
+Scripts to run four strcutural variant callers on 16p12 cohort.
 
 ### manta.sh
 
