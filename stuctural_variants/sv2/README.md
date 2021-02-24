@@ -12,7 +12,7 @@ Runs 3 python scripts to filter problematic calls from manta, lumpy, delly, and 
 
 ### sv2_submit.sh
 
-Calls SV2 on filtered calls from manta, lumpy, delly, and cnvnator
+Calls SV2 on filtered calls from manta, lumpy, delly, and cnvnator.
 
 Note: for samples SG043, SG044, and SG138, I replaced the line 
 
