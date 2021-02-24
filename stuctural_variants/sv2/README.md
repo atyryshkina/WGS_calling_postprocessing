@@ -2,7 +2,7 @@
 
 Scripts to run SV2
 
-### [pre_filter_vcfs.sh](pre_filter_vcfs.sh)
+### pre_filter_vcfs.sh
 
 Runs 3 python scripts to filter problematic calls from manta, lumpy, delly, and cnvnator.
 
@@ -10,11 +10,9 @@ Runs 3 python scripts to filter problematic calls from manta, lumpy, delly, and 
 2. filter_dups_dels.py filters calls that aren't dups or dels
 3. filter_segdups.py filters segdups that are in the filter_regions.bed file
 
-### [sv2_submit.sh](sv2_submit.sh)
+### sv2_submit.sh
 
 Calls SV2 on filtered calls from manta, lumpy, delly, and cnvnator
-
-> code=SG138
 
 Note: for samples SG043, SG044, and SG138, I replaced the line 
 
