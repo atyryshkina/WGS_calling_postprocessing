@@ -1,6 +1,6 @@
-# SV2 post-processing
+# PennCNV annotation
 
-Jupyter notebooks for postprocessing SV2 output.
+Jupyter notebooks for annotating PennCNV output.
 
 ### merge_penncnv_original.ipynb
 
