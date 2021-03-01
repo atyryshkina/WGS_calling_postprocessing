@@ -2,9 +2,9 @@
 
 Jupyter notebooks for postprocessing SV2 output.
 
-### merge_sv2_vcfs.ipynb
+### merge_penncnv_original.ipynb
 
-Merges VCFs output by SV2. Removes calls that aren't DUPs or DELs, and that aren't FILTER==PASS. 
+Combines PennCNV calls from "PennCNV 2017 calls final".xlsx (which were calls made from Lucilla's paper) and "PennCNV calls final".xlsx (new samples for the WGS paper), filters for size > 50 kbp, and filters out poor quality samples.
 
 ### intra_cohort_frequency.ipynb
 
