@@ -6,6 +6,10 @@ Jupyter notebooks for postprocessing SV2 output.
 
 Merges VCFs output by SV2. Removes calls that aren't DUPs or DELs, and that aren't FILTER==PASS. 
 
+### resolve_sv2_breakpoints.ipynb
+
+Merges stuctural variants that overlap and sets the outermost breakpoints as the new breakpoints.
+
 ### intra_cohort_frequency.ipynb
 
 Get's intracohort structural variant count based on 50% reciprocal overlap.
