@@ -26,15 +26,14 @@ singularity exec \
 	durga_cache/str-toolkit.simg \
 	dumpSTR \
 	--vcf $vcf \
-	--out output/mergestr_by_family/mergestr_filtered
-	--min-locus-hwep 10−5 \
+	--out output/mergestr_by_family/mergestr_filtered \
+	--min-locus-hwep 0.00001 \
 	--min-locus-callrate 0.8 \
-	--filter-regions GRCh37GenomicSuperDup.sorted.gz \
+	--filter-regions GRCh37genomicSuperDups.sorted.bed.gz  \
 	--filter-regions-names SEGDUP
 
-# Note: GRCh37GenomicSuperDup.sorted.gz was obtained from UCSC Table Browser
-# with the options: Mammal, HUman, GRCh37/hg19, Repeats, Segemntal Dups, genomicSuperDups
-# https://genome.ucsc.edu/cgi-bin/hgTables?hgsid=1047622799_NYRO2yV9XWpcQdLYnWOEDqBIAVUJ&clade=mammal&org=&db=hg19&hgta_group=rep&hgta_track=genomicSuperDups&hgta_table=genomicSuperDups&hgta_regionType=genome&position=&hgta_outputType=primaryTable&hgta_outFileName=
 
+# Note: --min-locus-hwep 0.00001 is 10^-5
+# Note: see get_GRCh37genomicSuperDups.sh to see where GRCh37genomicSuperDups.sorted.bed.gz comes from.
 
 
