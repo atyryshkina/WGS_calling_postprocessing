@@ -23,3 +23,10 @@ see https://www.nature.com/articles/s41586-020-03078-7#Sec6
 
 Merges VCFs output by dumpstr_by_family.sh using default MergeSTR parameters.
 
+### get_GRCh37SuperDups.sh
+
+Get the GRCh37genomicSuperDups.sorted.bed.gz file from the UCSC Table Browser.
+
+### dumpstr_by_family2.sh
+
+Run dumpSTR on merged VCF with the options --min-locus-hwep 0.00001 --min-locus-callrate 0.8 --filter-regions GRCh37genomicSuperDups.sorted.bed.gz	--filter-regions-names SEGDUP
