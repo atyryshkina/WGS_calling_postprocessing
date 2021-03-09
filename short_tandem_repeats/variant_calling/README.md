@@ -23,6 +23,14 @@ see https://www.nature.com/articles/s41586-020-03078-7#Sec6
 
 Merges VCFs output by dumpstr_by_family.sh with default MergeSTR parameters.
 
+### get_GRCh37SuperDups.sh
+
+Get the GRCh37genomicSuperDups.sorted.bed.gz file from the UCSC Table Browser.
+
+### dumpstr_by_family2.sh
+
+Run dumpSTR on merged VCF with the options --min-locus-hwep 0.00001 --min-locus-callrate 0.8 --filter-regions GRCh37genomicSuperDups.sorted.bed.gz	--filter-regions-names SEGDUP
+
 ## Calling STRs on Chromosome X
 
 The following scripts are related to calling and filtering short tandem repeats on chromosome X.
@@ -55,10 +63,3 @@ Filters gangSTR variant calls with --min-call-DP 10	--max-call-DP 1000	--filter-
 
 Merges VCFs output by dumpstr_by_family_chromX.sh with default MergeSTR parameters.
 
-### get_GRCh37SuperDups.sh
-
-Get the GRCh37genomicSuperDups.sorted.bed.gz file from the UCSC Table Browser.
-
-### dumpstr_by_family2.sh
-
-Run dumpSTR on merged VCF with the options --min-locus-hwep 0.00001 --min-locus-callrate 0.8 --filter-regions GRCh37genomicSuperDups.sorted.bed.gz	--filter-regions-names SEGDUP
