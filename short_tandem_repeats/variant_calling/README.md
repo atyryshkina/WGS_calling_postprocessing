@@ -40,7 +40,7 @@ The following scripts are related to calling and filtering short tandem repeats 
 Python script to create a file listing each samples ploidy for chromosome X. It takes in a pedigree file and outputs a file with the format
 
 ```
-sample ploidy
+sample  ploidy
 SG123 2
 SG012 1
 SG234 2
