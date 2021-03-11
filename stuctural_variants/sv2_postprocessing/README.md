@@ -10,6 +10,10 @@ Merges VCFs output by SV2. Removes calls that aren't DUPs or DELs, and that aren
 
 Merges stuctural variants that overlap and sets the outermost breakpoints as the new breakpoints.
 
+### merge_nearby.ipynb
+
+Merges structural variants that are very close together with gap length < 20% of total CNV length and less than 50,000 bp.
+
 ### intra_cohort_frequency.ipynb
 
 Get's intracohort structural variant count based on 50% reciprocal overlap.
