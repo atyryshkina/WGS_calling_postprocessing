@@ -63,3 +63,10 @@ Filters gangSTR variant calls with --min-call-DP 10	--max-call-DP 1000	--filter-
 
 Merges VCFs output by dumpstr_by_family_chromX.sh with default MergeSTR parameters.
 
+### dumpstr_by_family2_chrX.sh
+
+Run dumpSTR on merged VCF with the options --min-locus-callrate 0.8 --filter-regions GRCh37genomicSuperDups.sorted.bed.gz	--filter-regions-names SEGDUP
+
+### dumpstr_by_family2_chrX_hw.sh
+
+Run dumpSTR on merged VCF with the options --min-locus-hwep 0.00001 only on female samples.
