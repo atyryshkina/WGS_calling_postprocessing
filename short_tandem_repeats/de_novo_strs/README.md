@@ -10,7 +10,7 @@ Creates one ped file per trio.
 
 Creates one VCF file per trio using the GangSTR 2.5 output.
 
-### monstr_chrX.sh
+### monstr.sh
 
 Runs MonSTR on 16p12 cohort.
 
