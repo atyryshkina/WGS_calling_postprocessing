@@ -18,4 +18,25 @@ Runs MonSTR on 16p12 cohort.
 
 Runs MonSTR on chromosome X.
 
+### format_and_filter.sh
+
+Formats, filters, and annotates monSTR output with the following filters:
+
+```
+posterior probability > 0.5
+locations with number of de novo mutations > 5 std. dev.
+locations homozygous for the de novo allele
+removes two samples with poor quality/contaminated sequencing
+```
+
+and the helper files:
+
+```
+filter_de_novo_strs.py
+filter_homozygous.py
+prep_annovar.py
+append_annovar.py
+```
+
+
 
