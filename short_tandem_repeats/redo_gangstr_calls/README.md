@@ -23,6 +23,7 @@ Combines the steps of filter_vcf.sh and get_important_calls.sh for chromosome X.
 ### gangstr*.sh
 
 Runs GangSTR 2.5 on the 16p12 cohort with the important calls.
+Note: needed to switch to all_batches_fixed.ped file because of incorrect sex labels.
 
 
 
