@@ -33,24 +33,28 @@ bamfiles=`echo ${bamfiles:1}`
 samplesex=
 for samp in $samples
 do
-append_sex=`cat ../vcf_callers/sample_sex.txt | grep $samp | cut -f2`
+append_sex=`cat ../vcf_callers/sample_sex.txt | grep $samp | cut -f3`
 samplesex=`echo $samplesex,$append_sex`
 done
 samplesex=`echo ${samplesex:1}`
+
+bamsamps=`echo $samples | sed 's/\s\+/,/g'`
 
 echo `date` $family
 echo `date` $samples
 echo `date` $bamfiles
 echo `date` $samplesex
+echo `date` $bamsamps
 
 /data5/software/GangSTR-2.5/build/GangSTR \
 		--bam $bamfiles \
-		--ref $fasta \
-		--regions output/bed_non_ref_calls/$family.chrX.bed  \
-		--out $out_dir/$family.chrX \
-		--include-ggl \
-		--chrom chrX \
-		--ploidy $samplesex
+ 		--ref $fasta \
+ 		--regions output/bed_non_ref_calls/$family.chrX.bed  \
+ 		--out $out_dir/$family.chrX \
+ 		--include-ggl \
+ 		--chrom chrX \
+ 		--samp-sex $samplesex \
+		--bam-samps $bamsamps
 
 bgzip ${out_dir}/${family}.chrX.vcf
 tabix -p vcf ${out_dir}/${family}.chrX.vcf.gz
@@ -59,4 +63,5 @@ tabix -p vcf ${out_dir}/${family}.chrX.vcf.gz
 
 
 echo `date` "done"
+
 
