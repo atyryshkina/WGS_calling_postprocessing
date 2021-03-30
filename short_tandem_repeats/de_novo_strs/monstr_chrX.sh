@@ -10,7 +10,7 @@
 #SBATCH --mem-per-cpu=20G
 #SBATCH --chdir /data5/16p12_WGS/structural_variants/de_novo_strs
 #SBATCH --nodelist=durga
-#SBATCH --array 1-115%10
+#SBATCH --array 34,21,37,35,49
 
 # https://www.nature.com/articles/s41586-020-03078-7#Sec6
 # MonSTR v1.0.0 was called separately on each family after applying call-level and locus-level genotype filters described above. MonSTR was called with non-default parameters --max-num-alleles 100 --include-invariant --gangstr --require-all-children --output-all-loci --min-num-encl-child 3 --max-perc-encl-parent 0.05 --min-encl-match 0.9 --min-total-encl 10 --posterior-threshold 0.5. Autosomes were run with the --default-prior -3 and chromosome X was run with the --naive option. 
@@ -43,7 +43,8 @@ MonSTR \
 	--min-encl-match 0.9 \
 	--min-total-encl 10 \
 	--posterior-threshold 0.5 \
-	--naive
+	--naive \
+	--chrX
 
 
 
