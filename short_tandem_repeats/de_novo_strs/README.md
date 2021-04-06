@@ -18,6 +18,10 @@ Runs MonSTR on 16p12 cohort.
 
 Runs MonSTR on chromosome X.
 
+### monstr_long.sh
+
+Runs monSTR based on flanking reads. monstr_long_chrX.sh does the same on chromsome X.
+
 ### format_and_filter.sh
 
 Formats, filters, and annotates monSTR output with the following filters:
@@ -33,6 +37,7 @@ and the helper files:
 
 ```
 filter_de_novo_strs.py
+filter_de_novo_strs_long.py
 filter_homozygous.py
 prep_annovar.py
 append_annovar.py
